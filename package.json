@@ -1,0 +1,35 @@
+{
+  "name": "metho-number",
+  "version": "0.0.3",
+  "description": "JavaScript Number prototype extensions using Metho",
+  "main": "metho-number.js",
+  "type": "module",
+  "module": "metho-number.js",
+  "sideEffects": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonrandy/metho-number.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "methods",
+    "object",
+    "syntax",
+    "metho",
+    "number",
+    "prototype"
+  ],
+  "author": "Jon Randy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonrandy/metho-number/issues"
+  },
+  "homepage": "https://github.com/jonrandy/metho-number#readme",
+  "dependencies": {
+    "metho": "^0.0.3"
+  }
+}

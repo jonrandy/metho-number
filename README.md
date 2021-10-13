@@ -1,2 +1,18 @@
 # metho-number
-Number prototype extensions
+Number prototype extensions:
+
+to
+of
+hex
+bin
+base(n)
+even
+odd
+ceil
+floor
+round
+next
+pred
+gcd(n)
+times(i)
+chr
