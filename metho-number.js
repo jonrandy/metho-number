@@ -37,6 +37,14 @@ export const bin = Metho.add(
   }
 )
 
+// convert number to absolute value
+export const abs = Metho.add(
+  target,
+  function() {
+    return Math.abs(this)
+  }
+)
+
 // convert number to base n
 export const base = Metho.add(
   target,
