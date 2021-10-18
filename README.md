@@ -5,6 +5,7 @@ Number prototype extensions:
 * of
 * hex
 * bin
+* abs
 * base(n)
 * even
 * odd
