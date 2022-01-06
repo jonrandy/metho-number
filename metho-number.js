@@ -6,9 +6,12 @@ const target = Number.prototype
 // range syntax: x[to(y, [{step: s}])]
 export const to = Metho.add(
   target,
-  function(end, {step} = {step: this<=end ? 1 : -1}) {
+  function(end, {step = this<=end ? 1 : -1} = {}) {
     let arr = [], i, d = end>this
-    for (i=+this; d?(i<=end):(i>=end); i+=step) arr.push(i)
+      if (d)
+        for (i=+this; i<=end; i+=step) arr.push(i)
+      else
+        for (i=+this; i>=end; i+=step) arr.push(i)
     return arr
   }
 )
@@ -17,7 +20,7 @@ export const to = Metho.add(
 export const of = Metho.add(
   target,
   function(thing) {
-    return Array.from({length:+this}, _=>thing)
+    return Array.from({length:+this}, ()=>thing)
   }
 )
 
