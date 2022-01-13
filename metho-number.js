@@ -32,6 +32,14 @@ export const hex = Metho.add(
   }
 )
 
+// convert number to octal
+export const oct = Metho.add(
+  target,
+  function oct() {
+    return this.toString(8)
+  }
+)
+
 // convert number to binary
 export const bin = Metho.add(
   target,
