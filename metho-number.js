@@ -6,7 +6,7 @@ const target = Number.prototype
 // range syntax: x[to(y, [{step: s}])]
 export const to = Metho.add(
   target,
-  function(end, {step = this<=end ? 1 : -1} = {}) {
+  function to(end, {step = this<=end ? 1 : -1} = {}) {
     let arr = [], i, d = end>this
       if (d)
         for (i=+this; i<=end; i+=step) arr.push(i)
@@ -19,7 +19,7 @@ export const to = Metho.add(
 // construct an array of n things
 export const of = Metho.add(
   target,
-  function(thing) {
+  function of(thing) {
     return Array.from({length:+this}, ()=>thing)
   }
 )
@@ -27,7 +27,7 @@ export const of = Metho.add(
 // convert number to hexadecimal
 export const hex = Metho.add(
   target,
-  function() {
+  function hex() {
     return this.toString(16)
   }
 )
@@ -35,7 +35,7 @@ export const hex = Metho.add(
 // convert number to binary
 export const bin = Metho.add(
   target,
-  function() {
+  function bin() {
     return this.toString(2)
   }
 )
@@ -43,7 +43,7 @@ export const bin = Metho.add(
 // convert number to absolute value
 export const abs = Metho.add(
   target,
-  function() {
+  function abs() {
     return Math.abs(this)
   }
 )
@@ -51,7 +51,7 @@ export const abs = Metho.add(
 // convert number to base n
 export const base = Metho.add(
   target,
-  function(n) {
+  function base(n) {
     return this.toString(n)
   }
 )
@@ -59,7 +59,7 @@ export const base = Metho.add(
 // is number even?
 export const even = Metho.add(
   target,
-  function() {
+  function even() {
     return !(this&1)
   }
 )
@@ -67,7 +67,7 @@ export const even = Metho.add(
 // is number odd?
 export const odd = Metho.add(
   target,
-  function() {
+  function odd() {
     return !!(this&1)
   }
 )
@@ -75,7 +75,7 @@ export const odd = Metho.add(
 // ceiling
 export const ceil = Metho.add(
   target,
-  function() {
+  function ceil() {
     return Math.ceil(this)
   }
 )
@@ -83,7 +83,7 @@ export const ceil = Metho.add(
 // floor
 export const floor = Metho.add(
   target,
-  function() {
+  function floor() {
     return Math.floor(this)
   }
 )
@@ -91,7 +91,7 @@ export const floor = Metho.add(
 // round
 export const round = Metho.add(
   target,
-  function() {
+  function round() {
     return Math.round(this)
   }
 )
@@ -99,7 +99,7 @@ export const round = Metho.add(
 // next
 export const next = Metho.add(
   target,
-  function() {
+  function next() {
     return ~~this+1
   }
 )
@@ -107,7 +107,7 @@ export const next = Metho.add(
 // pred
 export const pred = Metho.add(
   target,
-  function() {
+  function pred() {
     return ~~this+1
   }
 )
@@ -115,7 +115,7 @@ export const pred = Metho.add(
 // gcd
 export const gcd = Metho.add(
   target,
-  function(b) {
+  function gcd(b) {
     let aa = Math.abs(this), ab = Math.abs(b)
     if (aa == 0)
       return ab
@@ -135,7 +135,7 @@ export const gcd = Metho.add(
 // times
 export const times = Metho.add(
   target,
-  function(i) {
+  function times(i) {
     const t = typeof i
     if (t === 'string') {
       return this[of(i)].join('')
@@ -150,7 +150,7 @@ export const times = Metho.add(
 // chr
 export const chr = Metho.add(
   target,
-  function() { return String.fromCharCode(this) }
+  function chr() { return String.fromCharCode(this) }
 )
 
 
