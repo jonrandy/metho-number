@@ -116,7 +116,7 @@ export const next = Metho.add(
 export const pred = Metho.add(
   target,
   function pred() {
-    return ~~this+1
+    return ~~this-1
   }
 )
 
