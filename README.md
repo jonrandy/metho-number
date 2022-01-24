@@ -12,7 +12,7 @@ import { to, of, hex, oct, bin, abs, base, even, odd, ceil, floor, round, next, 
 
 // of
 3[of(3)] // [3, 3, 3]
-4[of['Hi']] // ['Hi', 'Hi', 'Hi', 'Hi']
+4[of('Hi')] // ['Hi', 'Hi', 'Hi', 'Hi']
 
 // hex
 254[hex] // 'fe'
