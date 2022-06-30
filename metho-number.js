@@ -139,7 +139,6 @@ export const gcd = Metho.add(
   }
 )
 
-
 // times
 export const times = Metho.add(
   target,
@@ -154,12 +153,14 @@ export const times = Metho.add(
   }
 )
 
-
 // chr
 export const chr = Metho.add(
   target,
   function chr() { return String.fromCharCode(this) }
 )
 
-
-
+// clamp
+export const clamp = Metho.add(
+  target,
+  function clamp(min, max) { return Math.min(Math.max(this, min), max) }
+)

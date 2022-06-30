@@ -3,7 +3,7 @@ Number prototype extensions using the [Metho](https://github.com/jonrandy/metho)
 
 ## Usage
 ```js
-import { to, of, hex, oct, bin, abs, base, even, odd, ceil, floor, round, next, pred, gcd, times, chr } from "metho-number"
+import { to, of, hex, oct, bin, abs, base, even, odd, ceil, floor, round, next, pred, gcd, times, chr, clamp } from "metho-number"
 
 // to
 1[to(5)] // [1, 2, 3, 4, 5]
@@ -66,5 +66,10 @@ const sayHello = () => console.log("Hello")
 
 // chr
 65[chr] // 'A'
+
+// clamp
+1[clamp(3,7)] // 3
+5[clamp(3,7)] // 5
+9[clamp(3,7)] // 7
 
 ```
