@@ -1,6 +1,6 @@
 {
   "name": "metho-number",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "description": "JavaScript Number prototype extensions using Metho",
   "main": "metho-number.js",
   "type": "module",
@@ -30,6 +30,6 @@
   },
   "homepage": "https://github.com/jonrandy/metho-number#readme",
   "dependencies": {
-    "metho": "^0.0.5"
+    "metho": "^1.0.0"
   }
 }
