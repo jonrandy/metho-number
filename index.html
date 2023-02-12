@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title></title>
-</head>
-<body>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="importmap">
+			{
+				"imports": {
+					"metho": "../metho/metho.js"
+				}
+			}
+		</script>
 
-
-	<script type="module">
-		import * as mn from "./metho-number.js"
-		Object.assign(window, mn)
-		console.log(25[hex])
-	</script>
-
-</body>
+		<script type="module">
+			import * as mn from "./metho-number.js"
+			Object.assign(window, mn)
+			console.log((25)[hex])
+		</script>
+	</body>
 </html>
